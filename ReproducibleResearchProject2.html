@@ -139,9 +139,6 @@ $(document).ready(function () {
 <pre class="r"><code>library(&quot;data.table&quot;)
 library(&quot;ggplot2&quot;)
 
-fileUrl &lt;- &quot;https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2&quot;
-download.file(fileUrl, destfile = paste0(&quot;/Users/mgalarny/Desktop&quot;, '/repdata%2Fdata%2FStormData.csv.bz2'))
-stormDF &lt;- read.csv(&quot;/Users/mgalarny/Desktop/repdata%2Fdata%2FStormData.csv.bz2&quot;)
 
 # Converting data.frame to data.table
 stormDT &lt;- as.data.table(stormDF)</code></pre>
