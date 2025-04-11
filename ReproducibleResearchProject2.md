@@ -1,4 +1,3 @@
-Github repo for the Course: [Reproducible Research](https://github.com/mGalarnyk/datasciencecoursera/tree/master/5_Reproducible_Research) </br> Github repo for Rest of Specialization: [Data Science Coursera](https://github.com/mGalarnyk/datasciencecoursera)
 
 1: Synopsis
 -----------
@@ -23,11 +22,7 @@ Download the raw data file and extract the data into a dataframe.Then convert to
 library("data.table")
 library("ggplot2")
 
-fileUrl <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2"
-download.file(fileUrl, destfile = paste0("/Users/mgalarny/Desktop", '/repdata%2Fdata%2FStormData.csv.bz2'))
-stormDF <- read.csv("/Users/mgalarny/Desktop/repdata%2Fdata%2FStormData.csv.bz2")
-
-# Converting data.frame to data.table
+stormDF <- read.csv("repdata_data_StormData.csv.bz2")
 stormDT <- as.data.table(stormDF)
 ```
 
